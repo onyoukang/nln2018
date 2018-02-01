@@ -1,0 +1,45 @@
+html {
+	margin-top: 30px;
+	margin-left: 30px;
+}
+
+body {
+	text-align: center;
+}
+
+ul {
+	line-height: 1.5em;
+}
+
+a {
+	color: black;
+	text-decoration: none;
+}
+
+.button {
+	display: inline-block;
+	width: 200px;
+	height: 30px;
+	margin: auto;
+	/*margin-top: 300px;*/
+}
+
+.div {
+	position: absolute;
+	left: 530px;
+	top: 600px;
+}
+
+.mapouter {
+	position: absolute;
+	left: 420px; 
+	top: 45px;
+}
+
+.new-york-gif {
+	margin-top: 80px;
+}
+
+.new-york-city-gif {
+	margin-top: 80px;
+}
