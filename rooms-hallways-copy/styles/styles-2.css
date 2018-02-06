@@ -36,3 +36,13 @@ img:hover .one {
 	visibility: visible;
 	opacity: 1;
 }
+
+#question {
+	position: absolute;
+	top: 20px;
+	bottom: 10px;
+	left: 1300px;
+	right: 10px;
+	font-family: 'Roboto', sans-serif;
+	font-size: 20px;
+}
