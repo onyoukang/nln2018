@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Where Are You From?</title>
+		<link href="styles/styles.css" rel="stylesheet" type="text/css">
+	</head>
+	<body>
+		<!-- <audio>
+			<source src="solar-system.mp3" type="audio/mp3">
+		</audio> -->
+		<!-- <p id="bold">The Solar System</p> -->
+		<img src="images/solar-system.jpg" id="solar-system">
+
+		<br>
+		<br>
+		
+		<div class="div">
+			<p class="button"><a href="../options/satisfied-2.html">Oh, ok..</a></p>
+			<p class="button" id="button2"> <a href="../options/unsatisfied-2.html" id="link">But where are you really from?</a></p>
+		</div>
+
+		<script type="text/javascript">
+			document.getElementById('link').href = "option-" + Math.round((Math.random()*18)) + ".html";
+		</script>
+
+	</body>
+</html>

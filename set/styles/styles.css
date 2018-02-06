@@ -1,0 +1,64 @@
+html {
+	margin-top: 30px;
+	margin-left: 30px;
+}
+
+body {
+	text-align: center;
+	font-family: 'Roboto', sans-serif;
+}
+
+ul {
+	line-height: 1.5em;
+}
+
+a {
+	color: black;
+	text-decoration: none;
+}
+
+#bold {
+	font-weight: 500;
+	font-size: 40px;
+	margin-top: 280px;
+}
+
+.button {
+	display: inline-block;
+	width: 250px;
+	height: 30px;
+	margin: auto;
+	/*margin-top: 300px;*/
+}
+
+.div {
+	position: absolute;
+	left: 450px;
+	top: 600px;
+}
+
+.mapouter {
+	position: absolute;
+	left: 420px; 
+	top: 45px;
+}
+
+.new-york-gif, .new-york-city-gif, #earth-gif, #solar-system, #united-states {
+	margin-top: 80px;
+}
+
+.new-york-gif {
+	width: 500px;
+}
+
+#solar-system {
+	width: 600px;
+}
+
+#earth-gif {
+	width: 400px;
+}
+
+#united-states {
+	width: 600px;
+}
