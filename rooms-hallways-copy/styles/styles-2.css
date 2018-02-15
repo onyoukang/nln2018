@@ -26,16 +26,26 @@ img:hover {
 	transition: opacity 0.8s;
 }
 
-#question {
+#exclamation {
 	position: absolute;
 	top: 20px;
 	bottom: 10px;
-	left: 1300px;
+	left: 1330px;
 	right: 10px;
 	font-family: 'Roboto', sans-serif;
 	font-size: 25px;
 	font-weight: 400;
 	color: black;
+}
+
+#question {
+	position: absolute;
+	top: 20px;
+	font-family: 'Roboto', sans-serif;
+	font-size: 25px;
+	font-weight: 400;
+	color: black;
+	left: 50px;
 }
 
 .wrapper .text {
