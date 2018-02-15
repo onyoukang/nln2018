@@ -1,0 +1,49 @@
+html {
+	margin-top: 30px;
+	margin-left: 30px;
+	background-color: black;
+}
+
+body {
+	text-align: center;
+	font-family: 'Roboto', sans-serif;
+}
+
+ul {
+	line-height: 1.5em;
+}
+
+a {
+	color: white;
+	text-decoration: none;
+}
+
+.mapouter {
+	position: absolute;
+	left: 400px; 
+	top: 150px;
+	border: 2px solid white;
+	padding: 8px;
+}
+
+#button1 {
+	border: 1px solid white;
+	position: absolute;
+	padding: 4.5px 8px;
+	left: 170px;
+	top: 365px;
+}
+
+#button2 {
+	border: 1px solid white;
+	position: absolute;
+	padding: 4.5px 8px;
+	left: 1100px;
+	top: 365px;
+}
+
+#button1:hover, #button2:hover {
+	background-color: white;
+	color: black;
+}
+

@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Where Are You From?</title>
+		<link href="styles/styles-2.css" rel="stylesheet" type="text/css">
+	</head>
+	<body>
+		<div id="container">
+			<p id="option-5"><a href="https://www.google.com/maps/place/40%C2%B043'55.4%22N+73%C2%B058'33.0%22W/@40.7320205,-73.9780184,17z/data=!4m6!3m5!1s0x0:0x0!7e2!8m2!3d40.7320408!4d-73.9758297"  target="_blank"> 40°43'55.4"N 73°58'33.0"W</a></p>
+		</div>
+
+		<br>
+		<br>
+		
+		<a href="../options/satisfied-3.html"><p id="button1">That's Cool.</p></a>
+		<a href="../options/unsatisfied-3.html" id="link"><p id="button2">Where are you really from?</p></a>
+
+		<script type="text/javascript">
+			document.getElementById('link').href = "option-" + Math.round((Math.random()*18)) + ".html";
+		</script>
+
+	</body>
+</html>
