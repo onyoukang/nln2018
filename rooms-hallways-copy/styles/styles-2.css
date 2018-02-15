@@ -1,10 +1,13 @@
 html {
-	margin-top: 200px;
+	margin-top: 80px;
 	margin-left: 30px;
 }
 
 body {
 	text-align: center;
+	font-family: 'Roboto', sans-serif;
+	font-size: 40px;
+	font-weight: 500;
 }
 
 ul {
@@ -23,20 +26,6 @@ img:hover {
 	transition: opacity 0.8s;
 }
 
-.one, .two, .three {
-	position: absolute;
-	top: 0;
-	bottom: 0;
-	left: 0;
-	right: 0;
-	visibility: hidden;
-}
-
-img:hover .one {
-	visibility: visible;
-	opacity: 1;
-}
-
 #question {
 	position: absolute;
 	top: 20px;
@@ -45,4 +34,44 @@ img:hover .one {
 	right: 10px;
 	font-family: 'Roboto', sans-serif;
 	font-size: 20px;
+}
+
+.wrapper .text {
+	position:relative;
+	bottom:210px;
+	left:0px;
+	visibility:hidden;
+}
+
+.wrapper:hover .text {
+	visibility:visible;
+}
+
+.wrapper {
+	width: 300px;
+	height: 300px;
+}
+
+.text {
+	font-family: 'Roboto', sans-serif;
+	font-size: 30px;
+	font-weight: 500;
+}
+
+#one {
+	position: absolute;
+	top: 250px;
+	left: 230px;
+}
+
+#two {
+	position: absolute;
+	top: 250px;
+	left: 560px;
+}
+
+#three {
+	position: absolute;
+	top: 250px;
+	left: 890px;
 }
