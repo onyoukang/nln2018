@@ -181,8 +181,17 @@ div {
 	font-style: none;
 }
 
-span {
+.handle {
 	font-weight: 400;
+	color: black;
+}
+
+.handle:hover {
+	color: white;
+}
+
+a {
+	text-decoration: none;
 }
 
 .button {
@@ -216,25 +225,29 @@ a {
 @-moz-keyframes fadeIn { from { opacity:0; } to { opacity:1; } }
 @keyframes fadeIn { from { opacity:0; } to { opacity:1; } }
 
-/*.button {
-	opacity:0;
-	opacity: 1 \9;
-	-webkit-animation:fadeIn ease-in 1;
-	-moz-animation:fadeIn ease-in 1;
-	animation:fadeIn ease-in 1;
+@-webkit-keyframes colorIn { from { color: black; } to { color: white; } }
+@-moz-keyframes colorIn { from { color: black; } to { color: white; } }
+@keyframes colorIn { from { color: black; } to { color: white; } }
+
+.handle:hover {
+/*	opacity:0;
+	opacity: 1 \9*/;
+	-webkit-animation:colorIn ease-in 1;
+	-moz-animation:colorIn ease-in 1;
+	animation:colorIn ease-in 1;
 
 	-webkit-animation-fill-mode:forwards;
 	-moz-animation-fill-mode:forwards;
 	animation-fill-mode:forwards;
 
-	-webkit-animation-duration:1s;
-	-moz-animation-duration:1s;
-	animation-duration:1s;
+	-webkit-animation-duration:2s;
+	-moz-animation-duration:0.5s;
+	animation-duration:0.5s;
 
-	-webkit-animation-delay: 2.5s;
+/*	-webkit-animation-delay: 2.5s;
 	-moz-animation-delay: 2.5s;
-	animation-delay: 2.5s;
-}*/
+	animation-delay: 2.5s;*/
+}
 
 .button {
 	opacity:0;
@@ -251,7 +264,7 @@ a {
 	-moz-animation-duration:2.5s;
 	animation-duration:2.5s;
 
-	-webkit-animation-delay: 0s;
-	-moz-animation-delay: 0s;
-	animation-delay: 0s;
+	-webkit-animation-delay: 1.5s;
+	-moz-animation-delay: 1.5s;
+	animation-delay: 1.5s;
 }
