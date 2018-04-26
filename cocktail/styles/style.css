@@ -1,0 +1,291 @@
+html {
+	background-color: #252525;
+	/*font-family: 'Roboto', sans-serif;*/
+	font-family: 'Playfair Display', serif;
+}
+
+body {
+    margin-top: 40px;
+}
+
+#show {
+    z-index: 9999;
+    /*border-radius: 8px;*/
+    padding: 6px 14px;
+    font-size: 14px;
+    font-family: 'Montserrat', sans-serif;
+    font-style: italic;
+    text-transform: uppercase;
+    background-color: rgba(0, 0, 0, 0);
+    color: #fff;
+    position: absolute;
+    top: 30px;
+    right: 30px;
+}
+
+.container {
+    opacity: 0;
+    visibility: hidden;
+    /*transition: all 1s ease;*/
+}
+
+.container-active {
+    opacity: 1;
+    visibility: visible;
+    /*transition: all 1s ease;*/
+}
+
+.vl, .hl {
+	position: absolute;
+	margin-left: 130px;
+}
+
+.vl {
+	margin-top: 70px;
+	border-left: 2px solid white;
+    height: 580px;
+}
+
+.hl {
+	border-bottom: 2px solid white;
+	margin-top: 650px;
+    width: 1100px;
+}
+
+.bold {
+    font-weight: 700;
+    margin: 0;
+    padding: 0;
+    font-style: 15px;
+}
+
+.cocktail-name {
+    font-weight: 700;
+    font-size: 15px;
+}
+
+.column-container {
+	display: flex;
+    flex-direction: column;
+    background-color: none;
+}
+
+.column-container > div {
+    width: 100px;
+    margin: 10px;
+    /*margin-left: 20px; */
+    text-align: right;
+    line-height: 52px;
+    color: white;
+    font-weight: 300;
+    font-size: 13px;
+}
+
+.row-container {
+    display: flex;
+    flex-direction: row;
+    background-color: none;
+    margin-left: 140px;
+    margin-top: 10px;
+}
+
+.row-container > div {
+    width: 100px;
+    margin: 10px;
+    text-align: center;
+    line-height: 40px;
+    color: white;
+    font-weight: 300;
+    font-size: 13px;
+}
+
+/* Popup container - can be anything you want */
+.popup {
+    position: absolute;
+    display: inline-block;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+    width: 10px; 
+    height: 10px; 
+    background: #77ED89; 
+    /*-moz-border-radius: 5px; 
+    -webkit-border-radius: 5px; 
+    border-radius: 5px; */ 
+    border-radius: 50%;
+}
+
+.popup .popuptext {
+    visibility: hidden;
+    width: 140px;
+    background-color: #474747;
+    color: #fff;
+    text-align: center;
+    border-radius: 6px;
+    padding: 8px 0;
+    position: absolute;
+    z-index: 1;
+    bottom: 125%;
+    left: 50%;
+    margin-left: 10px;
+    font-size: 13px;
+    line-height: 25px;
+}
+
+.popup .popuptext::after {
+    content: "";
+    position: absolute;
+    top: 100%;
+    left: 50%;
+    margin-left: -5px;
+    border-width: 5px;
+    border-style: solid;
+    border-color: #555 transparent transparent transparent;
+}
+
+.popup .show {
+    visibility: visible;
+    -webkit-animation: fadeIn 1s;
+    animation: fadeIn 1s;
+}
+
+@-webkit-keyframes fadeIn {
+    from {opacity: 0;} 
+    to {opacity: 1;}
+}
+
+@keyframes fadeIn {
+    from {opacity: 0;}
+    to {opacity:1 ;}
+}
+
+/*.popup:hover {
+    width: 14px;
+    height: 14px;
+    margin-left: -1px;
+    margin-top: -1px;
+    transition: all 0.5s ease;
+}*/
+
+.ingredient-div {
+    top: 20px;
+    position: absolute;
+    z-index: -9999;
+}
+
+.ingredients {
+    font-family: 'Montserrat', sans-serif;
+    font-style: italic;
+    text-transform: uppercase;
+    color: rgb(0, 0, 0, 0);
+    -webkit-text-stroke: 1px;
+    -webkit-text-stroke-color: #FFFFFF;
+    font-size: 60px;
+    display: inline-block;
+    float: left;
+    margin: 0;
+    margin-left: 20px;
+    opacity: 0;
+    visibility: hidden;
+}
+
+.ingredients-active {
+    opacity: 1;
+    visibility: visible;
+}
+
+.brandy-1 {
+    top: 145px;
+    left: 185px;
+}
+
+.brandy-2 {
+    top: 145px;
+    left: 1040px;
+    background: #FDFECA;
+}
+
+.rum-1 {
+    top: 215px;
+    left: 450px;
+    background: #FE4C1A;
+}
+
+.rum-2 {
+    top: 215px;
+    left: 800px;
+    background: #F7F9CC;
+}
+
+.whisky-1 {
+    top: 290px;
+    left: 1160px;
+    background: #F5D070;
+}
+
+.whisky-2 {
+    top: 290px;
+    left: 800px;
+    background: #EEFECD;
+}
+
+.whisky-3 {
+    top: 290px;
+    left: 925px;
+    background: #D7910B;
+}
+
+.sake-1 {
+    top: 430px;
+    left: 675px;
+    background: #F96C33;
+}
+
+.gin-1 {
+    top: 500px;
+    left: 675px;
+    background: #FBFE77;
+}
+
+.gin-2 {
+    top: 500px;
+    left: 450px;
+    background: #FEB01D;
+}
+
+.tequila-1 {
+    top: 575px;
+    left: 800px;
+    background: #EFF583;
+}
+
+.tequila-2 {
+    top: 575px;
+    left: 320px;
+    background: #FEAC8B;
+}
+
+.vodka-1 {
+    top: 650px;
+    left: 450px;
+    background: #F45C3A;
+}
+
+.vodka-2 {
+    top: 650px;
+    left: 560px;
+    background: #FB3834;
+}
+
+/*.vodka-3 {
+    top: 650px;
+    left: 560px;
+    background: #FB3834;
+}*/
+
+.vodka-4 {
+    top: 650px;
+    left: 925px;
+    background: #F8D140;
+}
