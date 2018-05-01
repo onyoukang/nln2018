@@ -8,6 +8,26 @@ body {
     margin-top: 40px;
 }
 
+.title {
+    font-family: 'Montserrat', sans-serif;
+    font-style: italic;
+    text-transform: uppercase;
+    color: rgb(0, 0, 0, 0);
+    -webkit-text-stroke: 1px;
+    -webkit-text-stroke-color: #FFFFFF;
+    font-size: 200px;
+    position: absolute;
+    top: 80px;
+    left: 320px;
+    opacity: 1;
+    visibility: visible;
+}
+
+.title-active {
+    opacity: 0;
+    visibility: hidden;
+}
+
 #show {
     z-index: 9999;
     /*border-radius: 8px;*/

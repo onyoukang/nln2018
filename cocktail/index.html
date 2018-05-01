@@ -8,6 +8,8 @@
 	</head>
 	<body>
 
+        <p class="title">Mix up</p>
+
         <button type="button" id="show">button</button>
 
         <div class="container" id="container1">
@@ -143,11 +145,17 @@
                     }
                 });
 
+
+                // $(".ingredients").mouseenter(function() {
+                //     $(".title").addClass("title-active");
+                // });
+
                 // ingredients show when hover
                 $(".brandy-1").mouseenter(function() {
                     $(".hennessy").addClass("ingredients-active");
                     $(".hpnotiq").addClass("ingredients-active");
                     $(".hulk").addClass("name-active");
+                    $(".title").addClass("title-active");
                 });
 
                 $(".brandy-2").mouseenter(function() {
@@ -155,6 +163,7 @@
                     $(".eggnog").addClass("ingredients-active");
                     $(".rum").addClass("ingredients-active");
                     $(".tom").addClass("name-active");
+                    $(".title").addClass("title-active");
                 });
 
                 $(".rum-1").mouseenter(function() {
@@ -164,6 +173,7 @@
                     $(".orange").addClass("ingredients-active");
                     $(".almond").addClass("ingredients-active");
                     $(".flaming").addClass("name-active");
+                    $(".title").addClass("title-active");
                 });
 
                 $(".rum-2").mouseenter(function() {
@@ -172,6 +182,7 @@
                     $(".sugar").addClass("ingredients-active");
                     $(".sweetener").addClass("ingredients-active");
                     $(".daiquiri").addClass("name-active");
+                    $(".title").addClass("title-active");
                 });
 
                 $(".whisky-1").mouseenter(function() {
@@ -179,6 +190,7 @@
                     $(".water").addClass("ingredients-active");
                     $(".mint").addClass("ingredients-active");
                     $(".julep").addClass("name-active");
+                    $(".title").addClass("title-active");
                 });
 
                 $(".whisky-2").mouseenter(function() {
@@ -187,12 +199,14 @@
                     $(".sugar").addClass("ingredients-active");
                     $(".carbonated").addClass("ingredients-active");
                     $(".rickey").addClass("name-active");
+                    $(".title").addClass("title-active");
                 });
 
                 $(".whisky-3").mouseenter(function() {
                     $(".whisky").addClass("ingredients-active");
                     $(".beer").addClass("ingredients-active");
                     $(".boilermaker").addClass("name-active");
+                    $(".title").addClass("title-active");
                 });
 
                 $(".sake-1").mouseenter(function() {
@@ -201,6 +215,7 @@
                     $(".tomato").addClass("ingredients-active");
                     $(".lemon").addClass("ingredients-active");
                     $(".ginza").addClass("name-active");
+                    $(".title").addClass("title-active");
                 });
 
                 $(".gin-1").mouseenter(function() {
@@ -208,6 +223,7 @@
                     $(".lemon").addClass("ingredients-active");
                     $(".honey").addClass("ingredients-active");
                     $(".bee").addClass("name-active");
+                    $(".title").addClass("title-active");
                 });
 
                 $(".gin-2").mouseenter(function() {
@@ -216,6 +232,7 @@
                     $(".sweet").addClass("ingredients-active");
                     $(".sweetener").addClass("ingredients-active");
                     $(".damn").addClass("name-active");
+                    $(".title").addClass("title-active");
                 });
 
                 $(".tequila-1").mouseenter(function() {
@@ -224,6 +241,7 @@
                     $(".triple").addClass("ingredients-active");
                     $(".salt").addClass("ingredients-active");
                     $(".margarita").addClass("name-active");
+                    $(".title").addClass("title-active");
                 });
 
                 $(".tequila-2").mouseenter(function() {
@@ -231,6 +249,7 @@
                     $(".grapefruit").addClass("ingredients-active");
                     $(".lime").addClass("ingredients-active");
                     $(".paloma").addClass("name-active");
+                    $(".title").addClass("title-active");
                 });
 
                 $(".vodka-1").mouseenter(function() {
@@ -239,6 +258,7 @@
                     $(".cranberry").addClass("ingredients-active");
                     $(".peach").addClass("ingredients-active");
                     $(".sex").addClass("name-active");
+                    $(".title").addClass("title-active");
                 });
 
                 $(".vodka-2").mouseenter(function() {
@@ -246,12 +266,14 @@
                     $(".cranberry").addClass("ingredients-active");
                     $(".peach").addClass("ingredients-active");
                     $(".woo").addClass("name-active");
+                    $(".title").addClass("title-active");
                 });
 
                 $(".vodka-4").mouseenter(function() {
                     $(".vodka").addClass("ingredients-active");
                     $(".beer").addClass("ingredients-active");
                     $(".boot").addClass("name-active");
+                    $(".title").addClass("title-active");
                 });
 
                 // background color change 
@@ -265,6 +287,7 @@
                 $(".popup").mouseleave(function() {
                     $(".ingredients").removeClass("ingredients-active");
                     $(".name").removeClass("name-active");
+                    $(".title").removeClass("title-active");
                     $("html").css("background", "#252525");
                     $(".popup").css("opacity", 1);
                 });
