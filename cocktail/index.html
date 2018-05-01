@@ -40,6 +40,23 @@
             </div>
         </div>
 
+        <div class="name-div">
+            <p class="name hulk">Incredible Hulk</p>
+            <p class="name tom">Tom and Jerry</p>
+            <p class="name flaming">Flaming Volcano</p>
+            <p class="name daiquiri">Daiquiri</p>
+            <p class="name julep">Mint Julep</p>
+            <p class="name rickey">Lime Rickey</p>
+            <p class="name boilermaker">Boilermaker</p>
+            <p class="name ginza">Ginza Mary</p>
+            <p class="name bee">Bee's Knees</p>
+            <p class="name damn">Damn the Weather</p>
+            <p class="name margarita">Margarita</p>
+            <p class="name paloma">Paloma</p>
+            <p class="name sex">Sex on the Beach</p>
+            <p class="name woo">Woo Woo</p>
+            <p class="name boot">U-Boot</p>
+        </div>
 
         <div class="ingredient-div">
             <p class="ingredients hpnotiq">Hpnotiq</p>
@@ -126,15 +143,18 @@
                     }
                 });
 
+                // ingredients show when hover
                 $(".brandy-1").mouseenter(function() {
                     $(".hennessy").addClass("ingredients-active");
                     $(".hpnotiq").addClass("ingredients-active");
+                    $(".hulk").addClass("name-active");
                 });
 
                 $(".brandy-2").mouseenter(function() {
                     $(".brandy").addClass("ingredients-active");
                     $(".eggnog").addClass("ingredients-active");
                     $(".rum").addClass("ingredients-active");
+                    $(".tom").addClass("name-active");
                 });
 
                 $(".rum-1").mouseenter(function() {
@@ -143,6 +163,7 @@
                     $(".pineapple").addClass("ingredients-active");
                     $(".orange").addClass("ingredients-active");
                     $(".almond").addClass("ingredients-active");
+                    $(".flaming").addClass("name-active");
                 });
 
                 $(".rum-2").mouseenter(function() {
@@ -150,12 +171,14 @@
                     $(".lime-juice").addClass("ingredients-active");
                     $(".sugar").addClass("ingredients-active");
                     $(".sweetener").addClass("ingredients-active");
+                    $(".daiquiri").addClass("name-active");
                 });
 
                 $(".whisky-1").mouseenter(function() {
                     $(".bourbon").addClass("ingredients-active");
                     $(".water").addClass("ingredients-active");
                     $(".mint").addClass("ingredients-active");
+                    $(".julep").addClass("name-active");
                 });
 
                 $(".whisky-2").mouseenter(function() {
@@ -163,11 +186,13 @@
                     $(".lime-juice").addClass("ingredients-active");
                     $(".sugar").addClass("ingredients-active");
                     $(".carbonated").addClass("ingredients-active");
+                    $(".rickey").addClass("name-active");
                 });
 
                 $(".whisky-3").mouseenter(function() {
                     $(".whisky").addClass("ingredients-active");
                     $(".beer").addClass("ingredients-active");
+                    $(".boilermaker").addClass("name-active");
                 });
 
                 $(".sake-1").mouseenter(function() {
@@ -175,12 +200,14 @@
                     $(".vodka").addClass("ingredients-active");
                     $(".tomato").addClass("ingredients-active");
                     $(".lemon").addClass("ingredients-active");
+                    $(".ginza").addClass("name-active");
                 });
 
                 $(".gin-1").mouseenter(function() {
                     $(".gin").addClass("ingredients-active");
                     $(".lemon").addClass("ingredients-active");
                     $(".honey").addClass("ingredients-active");
+                    $(".bee").addClass("name-active");
                 });
 
                 $(".gin-2").mouseenter(function() {
@@ -188,6 +215,7 @@
                     $(".orange").addClass("ingredients-active");
                     $(".sweet").addClass("ingredients-active");
                     $(".sweetener").addClass("ingredients-active");
+                    $(".damn").addClass("name-active");
                 });
 
                 $(".tequila-1").mouseenter(function() {
@@ -195,12 +223,14 @@
                     $(".lime-juice").addClass("ingredients-active");
                     $(".triple").addClass("ingredients-active");
                     $(".salt").addClass("ingredients-active");
+                    $(".margarita").addClass("name-active");
                 });
 
                 $(".tequila-2").mouseenter(function() {
                     $(".tequila").addClass("ingredients-active");
                     $(".grapefruit").addClass("ingredients-active");
                     $(".lime").addClass("ingredients-active");
+                    $(".paloma").addClass("name-active");
                 });
 
                 $(".vodka-1").mouseenter(function() {
@@ -208,27 +238,33 @@
                     $(".orange").addClass("ingredients-active");
                     $(".cranberry").addClass("ingredients-active");
                     $(".peach").addClass("ingredients-active");
+                    $(".sex").addClass("name-active");
                 });
 
                 $(".vodka-2").mouseenter(function() {
                     $(".vodka").addClass("ingredients-active");
                     $(".cranberry").addClass("ingredients-active");
                     $(".peach").addClass("ingredients-active");
+                    $(".woo").addClass("name-active");
                 });
 
                 $(".vodka-4").mouseenter(function() {
                     $(".vodka").addClass("ingredients-active");
                     $(".beer").addClass("ingredients-active");
+                    $(".boot").addClass("name-active");
                 });
 
+                // background color change 
                 $(".popup").mouseenter(function() {
                     var color = $(this).css("background");
                     $("html").css("background", color);
                     $(".popup").css("opacity", 0);
                 });
 
+                // remove classes 
                 $(".popup").mouseleave(function() {
                     $(".ingredients").removeClass("ingredients-active");
+                    $(".name").removeClass("name-active");
                     $("html").css("background", "#252525");
                     $(".popup").css("opacity", 1);
                 });
