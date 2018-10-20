@@ -50,9 +50,21 @@ img:hover {
 
 .wrapper .text {
 	position:relative;
-	bottom:210px;
-	left:0px;
+	bottom:205px;
 	visibility:hidden;
+	float: left;
+}
+
+#dylan {
+	left: 110px;
+}
+
+#onyou {
+	left: 110px;
+}
+
+#alfie {
+	left: 115px;
 }
 
 .wrapper:hover .text {
@@ -86,4 +98,6 @@ img:hover {
 	position: absolute;
 	top: 250px;
 	left: 890px;
+	line-height: 34px;
+	text-align: center;
 }
